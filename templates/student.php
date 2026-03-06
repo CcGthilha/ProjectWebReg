@@ -1,4 +1,4 @@
-<?php include 'headerstd.php' ?>
+<?php include 'header.php' ?>
 
 <main class="flex items-center justify-center min-h-[70vh] bg-white">
     <div class="text-center px-4">

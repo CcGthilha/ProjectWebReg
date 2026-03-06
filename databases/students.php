@@ -1,6 +1,6 @@
 <?php
 // ฟังก์ชันสำหรับดึงข้อมูลนักเรียนจากฐานข้อมูล
-function getStudents(): mysqli_result|bool
+function getCurrentStudent(): mysqli_result|bool
 {
     global $conn;
     $sql = 'select * from students where student_id = ?';

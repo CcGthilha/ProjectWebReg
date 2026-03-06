@@ -1,4 +1,4 @@
-<?php include 'headerstd.php' ?>
+<?php include 'header.php' ?>
 <main class="container mx-auto px-6 py-10">
     <h1 class="text-3xl font-bold text-gray-800 mb-8"><?= $data['title'] ?></h1>
     

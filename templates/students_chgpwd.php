@@ -1,4 +1,4 @@
-<?php include 'headerstd.php' ?>
+<?php include 'header.php' ?>
 
 <main class="container mx-auto px-6 py-12 flex justify-center">
     <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm w-full max-w-md">

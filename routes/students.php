@@ -1,6 +1,6 @@
 <?php
 
-$result = getStudents();
+$result = getCurrentStudent();
 renderView('students', [
     'title' => 'ข้อมูลนักเรียน',
     'result' => $result,

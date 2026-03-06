@@ -11,7 +11,6 @@ function getEnrollments(): mysqli_result|bool
     $stmt->bind_param('i', $_SESSION['student_id']);
     $stmt->execute();
     $result = $stmt->get_result();
-    $conn->close();
     return $result;
 }
 

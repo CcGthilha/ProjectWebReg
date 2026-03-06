@@ -1,4 +1,4 @@
-<?php include 'headerstd.php' ?>
+<?php include 'header.php' ?>
 <main class="container mx-auto px-6 py-10">
     <section class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm mb-10">
         <h1 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-4">โปรไฟล์นักเรียน</h1>
