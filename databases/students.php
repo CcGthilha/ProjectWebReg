@@ -8,8 +8,17 @@ function getStudents(): mysqli_result|bool
     $stmt->bind_param('i', $_SESSION['student_id']);
     $stmt->execute();
     $result = $stmt->get_result();
-    // ห้ามมี $conn->close(); ตรงนี้เด็ดขาด
     return $result;
+}
+
+function getStudentById(int $id): mysqli_result|bool
+{
+    global $conn;
+    $sql = 'select * from students where student_id = ?';
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
+    return $stmt->get_result();
 }
 
 function checkLogin(string $email, string $password): array|null
@@ -27,17 +36,6 @@ function checkLogin(string $email, string $password): array|null
         }
     }
     return null;
-}
-
-function getStudentById(int $id): mysqli_result|bool
-{
-    global $conn;
-    $sql = 'select * from students where student_id = ?';
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('i', $id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    return $result;
 }
 
 function updateStudentPassword(int $id, string $hashed_password): bool
