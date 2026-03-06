@@ -50,4 +50,9 @@
         </div>
     </section>
 </main>
+<script>
+function confirmSubmission() {
+    return confirm("คุณต้องการถอนรายวิชานี้หรือไม่?");
+}
+</script>
 <?php include 'footer.php' ?>

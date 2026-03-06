@@ -22,4 +22,9 @@
         <?php endif; ?>
     </div>
 </main>
+<script>
+function confirmSubmission() {
+    return confirm("คุณต้องการลงทะเบียนเรียนในหลักสูตรนี้หรือไม่?");
+}
+</script>
 <?php include 'footer.php' ?>
